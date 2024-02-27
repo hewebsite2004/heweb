@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('cal.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 80px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #b30000;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b30000;
+        }
+
+        #output {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        #comment {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        p.footer {
+            text-align: center;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Calculator</h1>
+        <form id="calorieForm">
+            <label for="age">Age:</label>
+            <input type="text" id="age" placeholder="Age" />
+
+            <label for="height">Height:</label>
+            <input type="text" id="height" placeholder="Height" />
+
+            <select id="heightunits">
+                <option value="metres" selected="selected">Metres</option>
+                <option value="inches">Inches</option>
+            </select>
+
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" placeholder="Weight" />
+
+            <select id="weightunits">
+                <option value="kg" selected="selected">Kilograms</option>
+                <option value="lb">Pounds</option>
+            </select>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <input type="submit" value="Calculate Calories">
+        </form>
+
+        <div id="result">
+            <br>
+            <label>Calories Needed: <span id="totalCals"></span> kcal per day</label>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("calorieForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            calculateCalories();
+        });
+
+        function calculateCalories() {
+            var age = parseFloat(document.getElementById("age").value);
+            var height = parseFloat(document.getElementById("height").value);
+            var heightunits = document.getElementById("heightunits").value;
+            var weight = parseFloat(document.getElementById("weight").value);
+            var weightunits = document.getElementById("weightunits").value;
+            var gender = document.getElementById("gender").value;
+
+            if (heightunits === "inches") height /= 39.3700787;
+            if (weightunits === "lb") weight /= 2.20462;
+
+            var result = 0;
+            if (age && height && weight) {
+                if (gender === "male") {
+                    result = 66.47 + (13.75 * weight) + (5.0 * height - (6.75 * age));
+                } else if (gender === "female") {
+                    result = 655.1 + (9.563 * weight) + (1.85 * height - (4.676 * age));
+                }
+            }
+
+            document.getElementById("totalCals").innerText = result.toFixed(2);
+        }
+    </script>
+</body>
+</html>

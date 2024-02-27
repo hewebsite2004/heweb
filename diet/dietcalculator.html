@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Calculator</title>
+    <style>
+               body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('55.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 80px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+        #output {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        #comment {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        p.footer {
+            text-align: center;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Diet Calculator</h1>
+        <form id="dietForm">
+            <label for="age">Age:</label>
+            <input type="text" id="age" placeholder="Age" />
+
+            <label for="height">Height:</label>
+            <input type="text" id="height" placeholder="Height" />
+
+            <select id="heightunits">
+                <option value="metres" selected="selected">Metres</option>
+                <option value="inches">Inches</option>
+            </select>
+
+            <label for="weight">Weight:</label>
+            <input type="text" id="weight" placeholder="Weight" />
+
+            <select id="weightunits">
+                <option value="kg" selected="selected">Kilograms</option>
+                <option value="lb">Pounds</option>
+            </select>
+
+            <input type="submit" value="Calculate Diet">
+        </form>
+
+        <div id="result">
+            <br>
+            <label>Green Vegetables: <span id="totalCals" style="color: rgb(255, 0, 0);"></span> gm per day</label>
+            <br>
+            <label>Pulses: <span id="totalCals1" style="color: rgb(255, 0, 0);"></span> gm per day</label>
+            <br>
+            <label>Water: <span id="totalCals2" style="color: rgb(255, 0, 0);"></span> ml per day</label>
+            <br>
+            <label>Dairy Products: <span id="totalCals3" style="color: rgb(255, 0, 0);"></span> gm per day</label>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("dietForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            calculateDiet();
+        });
+
+        function calculateDiet() {
+            var age = parseFloat(document.getElementById("age").value);
+            var height = parseFloat(document.getElementById("height").value);
+            var heightunits = document.getElementById("heightunits").value;
+            var weight = parseFloat(document.getElementById("weight").value);
+            var weightunits = document.getElementById("weightunits").value;
+
+            if (heightunits === "inches") height /= 39.3700787;
+            if (weightunits === "lb") weight /= 2.20462;
+
+            var result = 0;
+            if (age && height && weight) {
+                // Calculate different diet components here
+                var greenVegetables = Math.round(1.47 + (1.75 * weight) + (1.0 * height - (1.75 * age)));
+                var pulses = Math.round(0.47 + (1.75 * weight) + (1.0 * height - (1.75 * age)));
+                var water = Math.round(3.47 + (8.75 * weight) + (4.0 * height - (1.75 * age)));
+                var dairyProducts = Math.round(0.07 + (1.75 * weight) + (1.0 * height - (1.75 * age)));
+
+                document.getElementById("totalCals").innerText = greenVegetables;
+                document.getElementById("totalCals1").innerText = pulses;
+                document.getElementById("totalCals2").innerText = water;
+                document.getElementById("totalCals3").innerText = dairyProducts;
+            }
+        }
+    </script>
+</body>
+</html>
