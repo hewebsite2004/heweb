@@ -628,6 +628,30 @@
                                 },
                                 useModalOverlay: !0
                             });
+                            [{
+                                name: "foods",
+                                text: "Select the foods from the dropdown",
+                                attachTo: ".foodSelector bottom",
+                                buttons: [{
+                                    text: "Next",
+                                    action: i.next
+                                }]
+                            }, {
+                                name: "macro",
+                                text: "Then you will see the total calories and macro nutrients.",
+                                attachTo: ".macroNutrients bottom",
+                                buttons: [{
+                                    text: "Next",
+                                    action: i.next
+                                }]
+                            }, {
+                                name: "micro",
+                                text: "And also all micro nutrients and % of daily recommended values.",
+                                attachTo: ".microNutrients left",
+                                buttons: [{
+                                    text: "Thanks, enjoy!",
+                                    action: i.next
+                                }]
                             }, {
                                 name: "micro",
                                 text: "And also all micro nutrients and % of daily recommended values.",
