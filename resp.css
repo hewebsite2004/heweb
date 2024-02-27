@@ -1,0 +1,268 @@
+<nav>
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12 column-md-8">
+        <p id="logo">Health Elite</p>
+      </div>
+      <div class="column-xs-12 column-md-4">
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="about">
+  <div class="container">
+    <section class="grid info">
+      <div class="column-xs-12 column-md-1">
+        <div class="about">
+          <h3 class="section-heading">About Us</h3>
+        </div>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <img src="https://source.unsplash.com/NXiIVnzBwZ8">
+      </div>
+      <div class="column-xs-12 column-md-7">
+        <div class="intro">
+          <h2><u>We are here to help you become the healthiest version of yourself.</u></h2>
+          <ul>
+            <li><strong><u>Health Conditions Hub:</u></strong> we understand that knowledge is key to managing health conditions effectively. Our Health Conditions Hub serves as a reliable resource, providing in-depth information, latest research, and practical tips on a wide range of health issues. Whether you're navigating a chronic condition or seeking preventive measures, our hub is designed to be your go-to source for accurate and accessible information.</li>
+                      <br>
+          <br>
+
+            <li><strong><u>Nutritional Facts Database:</u></strong> Elevate your nutrition game with our Nutritional Facts Database. We offer a vast repository of information on various foods, helping you make informed choices that align with your health goals. From calorie counts to essential nutrients, our database is a valuable tool for anyone looking to optimize their diet and foster a healthier lifestyle.</li>
+          <br>
+          <br>
+
+            <li><strong><u>Doctor Consultation Platform:</u></strong> Your health journey is unique, and sometimes you need personalized guidance. Our Doctor Consultation platform connects you with experienced healthcare professionals who can provide expert advice tailored to your specific needs. Convenient, secure, and easily accessible, this feature brings healthcare to your fingertips, ensuring you receive the support you deserve.</li>
+                      <br>
+          <br>
+
+            <li><strong><u>Fitness Integration with Google Fit:</u></strong> Seamlessly sync your fitness data with Google Fit integration. Whether you're tracking your steps, monitoring your heart rate, or logging workouts, our platform makes it easy to consolidate your health and fitness information in one place. The synergy between our features and Google Fit enhances your overall wellness experience, allowing you to visualize your progress and stay motivated on your fitness journey.</li>
+            
+          </ul>
+          <br>
+                    <br>
+
+         
+
+          <p>At Health elite, we believe that health is a holistic pursuit, and our features are crafted to address every aspect of your well-being. Join us on this transformative journey, where knowledge, nutrition, expert guidance, fitness, and community support converge to empower you to live your healthiest, happiest life.</p>
+        </div>
+      </div>
+      <div class="column-xs-12 column-md-7">
+      </div>
+    </section>
+  </div>
+</main>
+
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+
+
+
+$white: #fff;
+$gray: #a5a5a5;
+$black: #000;
+$text: #000;
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: $text;
+  background: $white;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: 'EB Garamond', serif;
+  color: $black;
+  line-height: 1.1;
+}
+
+h2, h3 {
+  color: $black;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.325rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  &:nth-child(4) {
+    margin: 0;
+  }
+  &.copyright {
+    margin: 1.5rem 0;
+  }
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  width: 40rem;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+.intro {
+  margin: 1rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav {
+  position: relative;
+  padding: 1.25rem 0 1.25rem 0;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    li {
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      margin: 0 1.5rem 0 0;
+      &:nth-child(3) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+nav .grid {
+  > [class*="column-"] {
+    padding: 0.25rem 1rem;
+  }
+}
+
+#logo {
+  color: $black;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.grid {
+  > [class*="column-"] {
+    padding: 1rem;
+  }
+}
+
+.section-heading {
+  transform: rotate(0) translateX(0);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: $md) {
+  body {
+    font-size: 1.125rem;
+  }
+  
+  nav {
+    padding: 2.5rem 0 2.5rem 0;
+    ul {
+      justify-content: flex-end;
+    }
+  }
+  
+  h1 {
+    font-size: 3.25rem;
+  }
+  
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+  
+  img {
+    height: 40rem;
+  }
+  
+  .section-heading {
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+  }
+  
+  .intro {
+    padding: 1rem;
+  }
+  
+  blockquote {
+    width: 30rem;
+    height: 40rem;
+  }
+}
+
+

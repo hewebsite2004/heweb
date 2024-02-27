@@ -1,0 +1,71 @@
+
+.contact-hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("backdrop.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 2em auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form textarea {
+  resize: vertical;
+}
+
+#contact-form button {
+  padding: 0.8em 1em;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgb(91, 197, 64);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover,
+#contact-form button:focus {
+  background-color: rgba(91, 197, 64, 0.8);
+}

@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+hr {
+  margin: auto;
+  border: 0;
+  width: 10%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(2, 124, 2);
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  z-index: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em 0.5em; 
+}
+
+nav a {
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.2rem; 
+  color: #232323;
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgb(116, 116, 116);
+}
+
+@media (min-width: 22rem) {
+  nav a {
+    font-size: 1.4rem; 
+  }
+}
+
+@media (min-width: 55rem) {
+  nav a {
+    font-size: 1.5rem; 
+  }
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 5px 2px 2px rgba(42, 42, 42, 0.192);
+  max-width: 100%;
+}
+
+.logo {
+  width: 18rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 5rem) {
+  .logo {
+    margin-top: 5px;
+    width: 20rem;
+  }
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 1rem;
+  font-weight: 800;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.button-subscribe {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: rgb(255, 0, 47);
+}
+
+@media (min-width: 55rem) {
+  .button-subscribe {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .button-subscribe:hover,
+  .button-subscribe:focus {
+    background-color: rgb(255, 161, 178);
+  }
+}
+
+.button-contact {
+  font-size: 0.7rem;
+  background-color: rgb(235, 235, 235);
+  border-color: rgba(72, 75, 71, 0.678);
+  color: rgb(0, 0, 0);
+}
+
+.button-contact:hover,
+.button-contact:focus {
+  background-color: rgba(91, 197, 64, 0.88);
+  border-color: rgba(91, 197, 64, 0.88);
+}
+
+nav {
+  top: 0;
+  width: 100%;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  z-index: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.8em 0.5em;
+}
+
+nav a {
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  color: #232323;
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgb(116, 116, 116);
+}
+
+@media (min-width: 22rem) {
+  nav a {
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0.5rem;
+    color: #232323;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: rgb(116, 116, 116);
+  }
+}
+
+@media (min-width: 55rem) {
+  nav a {
+    font-size: 0.8rem;
+  }
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 5px 2px 2px rgba(42, 42, 42, 0.192);
+  max-width: 100%;
+}
+
+.logo {
+  width: 18rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 5rem) {
+  .logo {
+    margin-top: 5px;
+    width: 20rem;
+  }
+}
+
+.input-form {
+  height: 1.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  text-align: left;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 55rem) {
+  .input-form {
+    height: 2.1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.home-hero {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.739), rgba(0, 0, 0, 0.534)),
+    url("backdrop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #dddd;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10em 0;
+  color: #fff;
+}
+
+.home-hero p {
+  padding-top: 1.5rem;
+  font-weight: 80;
+  font-size: 25px;
+}
+
+@media (min-width: 55rem) {
+  .home-hero p {
+    font-size: 1.1rem;
+  }
+}
+
+.home-about-textbox {
+  background-color: rgb(248, 213, 219);
+  padding: 3rem;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid #000000;
+  outline-offset: -2rem;
+  line-height: 150%;
+  position: relative;
+  color: #232323;
+}
+
+.home-about-textbox h1 {
+  background-color: rgb(248, 213, 219);
+  position: absolute;
+  top: 0.1em;
+  padding: 0.6rem 0.15rem;
+  margin: auto;
+  color: #232323;
+  font-size: 1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 60rem) {
+  .container {
+    max-width: 50%;
+  }
+
+  .home-about {
+    padding: 5rem;
+    background-image: url(http://gabyshealthychoices.com/imagenes/imagenGabyCroped.jpg);
+    background-repeat: no-repeat;
+    background-size: 50vw;
+  }
+
+  .home-about-textbox h1 {
+    font-size: 1.4rem;
+    padding: 1.09rem 0.1rem;
+  }
+
+  .home-about-textbox {
+    background-color: rgb(248, 213, 219);
+    width: 65%;
+    margin-left: -65%;
+    text-align: left;
+    top: -10rem;
+    box-shadow: 0 0 4em 0 rgb(0, 0, 0, 0.3);
+  }
+}
+
+.getting-started-sec {
+  padding-bottom: 1rem;
+}
+
+.getting-started-sec p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.getting-started-sec strong {
+  font-weight: bolder;
+  color: #232323;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 25vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.slide-content img {
+  padding: 0.5rem;
+  width: 20%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 37.5rem) {
+  .slide-content img {
+    width: 15%;
+  }
+}
+
+.slide-content h4 {
+  font-size: 0.7rem;
+  padding-bottom: 0.5rem;
+  font-style: italic;
+  color: #232323c9;
+}
+
+@media (min-width: 37.5rem) {
+  .slide-content h4 {
+    font-size: 0.8rem;
+  }
+}
+
+.slide-content p {
+  font-size: 0.5rem;
+  font-style: italic;
+  color: #2222229f;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media (min-width: 37.5rem) {
+  .slide-content p {
+    font-size: 0.7rem;
+  }
+}
+
+.current-slide {
+  opacity: 1;
+}
+
+.button-slide {
+  position: relative;
+  top: -150px;
+}
+
+.button-slide button {
+  background-color: transparent;
+  cursor: pointer;
+  color: #23232394;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-slide button:hover {
+  font-size: 1.6rem;
+  background-color: rgba(255, 192, 203, 0.479);
+}
+
+.button-slide button#button-next {
+  position: absolute;
+  top: 30%;
+  right: 15px;
+}
+
+.button-slide button#button-prev {
+  position: absolute;
+  top: 30%;
+  left: 15px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #b91818;
+  padding: 2%;
+  color: white;
+}
+
+footer p {
+  line-height: 1.6;
+}
+
+.footer_text1 {
+  font-size: 0.7rem;
+}
+
+.footer_text2 {
+  font-size: 0.4rem;
+}
+
+@media (min-width: 35rem) {
+  .footer_text1 {
+    font-size: 0.9rem;
+  }
+  .footer_text2 {
+    font-size: 0.6rem;
+  }
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  height: auto; 
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.image-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25em;
+  height: 20em;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 15px;
+  text-decoration: none;
+  color: #232323;
+  position: relative;
+}
+
+.image-button img {
+  width: 100%;
+  height: 70%;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+.image-button-text {
+  font-size: 1rem;
+  margin-top: -3rem;
+}
+
+.image-description-container {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  font-size: 0.8rem;
+  margin-top: -1.5rem;
+}
