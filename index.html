@@ -7,37 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HEALTH ELITE</title>
   <link rel="stylesheet" href="style.css" type="text/css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script>
-    function initGoogleFit() {
-      gapi.client.init({
-        apiKey: 'AIzaSyDgP3JoWMilh4fb6DWC1kPd1I3Ld6SP3_4',
-        clientId: '647037879688-p5bog3s7agv892d0iis6j265r50mtoa5.apps.googleusercontent.com',
-        discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/fitness/v1/rest'],
-        scope: 'https://www.googleapis.com/auth/fitness.activity.read',
-      }).then(function () {
-      });
-    }
-    function signInGoogleFit() {
-      gapi.auth2.getAuthInstance().signIn();
-    }
-    gapi.load('client:auth2', initGoogleFit);
-</script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <nav id="nav-bar">
     <ul>
-      <li><a href="#" onclick="signInGoogleFit()">G-Fit</a></li>
+      <li><a href="#">G-Fit</a></li>
       <li><a href="calculator.html">CALCULATORS</a></li>
-            <li><a href="SYM/index.html">Symptom checker</a></li>
+      <li><a href="SYM/index.html">Symptom checker</a></li>
       <li><a href="Healthy Food.pdf" download="Food.pdf">Foods</a></li>
       <li><a href="about.html">About us</a></li>
     </ul>
   </nav>
   <section class="home-hero">
     <div class="container">
-<U><h1 class="h1-text" style="font-size: 40px;">HEALTH ELITE</h1></U>
+      <h1 class="h1-text" style="font-size: 40px;">HEALTH ELITE</h1>
       <br>
       <h4 class="h1-text">Be your healthiest version</h4>
       <br>
