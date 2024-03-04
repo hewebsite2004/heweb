@@ -39,40 +39,6 @@ code {
 .App-link {
     color: #61dafb
 }
-
-@-webkit-keyframes App-logo-spin {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    to {
-        transform: rotate(1turn)
-    }
-}
-
-@keyframes App-logo-spin {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    to {
-        transform: rotate(1turn)
-    }
-}
-
-svg {
-    height: 80px;
-    width: 80px
-}
-
-@media (max-width: 63.99em) {
-    svg {
-        height:48px;
-        width: 48px;
-        margin-left: 1rem
-    }
-}
-
 #main-content>.grid-container>.grid-row {
     border: 1px solid #555;
     border-radius: 1rem
