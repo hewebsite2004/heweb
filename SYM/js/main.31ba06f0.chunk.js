@@ -119,7 +119,7 @@
             }), s.a.createElement("label", {
                 class: "usa-checkbox__label",
                 for: "truth"
-            }, "I agree to the DHILab terms and conditions")))), s.a.createElement("div", {
+            }, "I agree to the terms and conditions")))), s.a.createElement("div", {
                 className: "tablet:grid-col"
             }))
         }
