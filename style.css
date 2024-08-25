@@ -25,9 +25,16 @@ img {
   height: auto;
 }
 
+
+.h1-text:hover {
+  color: rgb(255, 0, 0);
+  transition: 0.3s;
+}
+
 .container {
-  width: 95%;
+  width: 500%;
   margin: 0 auto;
+  font-size: x-large;
 }
 
 hr {
@@ -249,19 +256,15 @@ nav a:focus {
     font-weight: 600;
   }
 }
-
-.home-hero {
-  height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.739), rgba(0, 0, 0, 0.534)),
-    url("backdrop.jpg");
-  background-size: cover;
-  background-position: center;
-  background-color: #dddd;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 10em 0;
-  color: #fff;
-}
+<div class="home-hero">
+  <video autoplay muted loop id="background-video">
+    <source src="backdrop.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="content">
+    <!-- Your content here -->
+  </div>
+</div>
 
 .home-hero p {
   padding-top: 1.5rem;
