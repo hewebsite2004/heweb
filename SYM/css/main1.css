@@ -37,11 +37,11 @@ code {
 }
 
 .App-link {
-    color: #61dafb
+    color: #ff0000
 }
 #main-content>.grid-container>.grid-row {
-    border: 1px solid #555;
-    border-radius: 1rem
+    border: 1px solid #e10000;
+    border-radius: 0.3rem
 }
 
 #Navbar {
@@ -93,11 +93,11 @@ code {
 .active {
     color: #000;
     font-weight: 700;
-    color: #0c5f96
+    color: #ff0000
 }
 
 .active,.done {
-    border-left: 2px solid #0c5f96
+    border-left: 2px solid #ff0000
 }
 
 .done {
@@ -133,7 +133,7 @@ code {
     }
 
     .progressbardiv,.progressbardiv25,.progressbardiv50 {
-        background-color: #0c5f96;
+        background-color: #ff0000;
         height: 3px;
         border-radius: 10px
     }
@@ -147,7 +147,7 @@ code {
     }
 
     .progressbardiv75,.progressbardiv100 {
-        background-color: #0c5f96;
+        background-color: #ff0000;
         height: 3px;
         border-radius: 10px
     }
@@ -158,7 +158,7 @@ code {
 
     .active {
         border-left: none;
-        border-bottom: 2px solid #0c5f96
+        border-bottom: 2px solid #ff0000
     }
 
     .done,.list {
@@ -167,7 +167,7 @@ code {
 
     .done {
         border-left: none;
-        border-bottom: 2px solid #0c5f96
+        border-bottom: 2px solid #ff0000
     }
 }
 
@@ -201,7 +201,7 @@ code {
 }
 
 #Home h2 {
-    color: #005ea2;
+    color: #ff0000;
     transition: .2s ease
 }
 
@@ -244,14 +244,14 @@ code {
 
 .searchSymptomsInput {
     border: none;
-    border-bottom: 1px solid #0a4b76;
+    border-bottom: 1px solid #ff0000;
     transition: .2s ease-in-out;
     box-sizing: border-box
 }
 
 .searchSymptomsInput:focus {
     outline: none!important;
-    border-bottom: 3px solid #0c5f96;
+    border-bottom: 3px solid #ff0000;
     transition: .2s ease-in-out
 }
 
@@ -276,7 +276,7 @@ ul.symtomsListBox>li {
 
 ul.symtomsListBox>li>button:hover {
     cursor: pointer;
-    background-color: #f4d03f;
+    background-color: #ff0000;
     transition: .2s ease-in-out;
     color: #000
 }
@@ -303,7 +303,7 @@ ul.symtomsListBox>li>button {
 }
 
 .UserSymptoms>ul>li {
-    background-color: #0c5f96;
+    background-color: #ff0000;
     color: #fff;
     padding: .5rem;
     border-radius: 1rem;
@@ -315,7 +315,7 @@ ul.symtomsListBox>li>button {
 .UserSymptoms>ul>li>button {
     border: none;
     background-color: #fff;
-    color: #0a4b76;
+    color: #ff0000;
     border-radius: 5rem;
     font-size: .8rem;
     font-weight: 600;
@@ -336,12 +336,12 @@ ul.symtomsListBox>li>button {
 }
 
 .patientInfo {
-    color: #0c5f96
+    color: #ff0000
 }
 
 .patientQuestions,.reportDiv {
     padding: .5rem 0;
-    border-top: 2px solid #0c5f96
+    border-top: 2px solid #ff0000
 }
 
 .singleQuestion:not(:first-child) {
@@ -349,7 +349,7 @@ ul.symtomsListBox>li>button {
 }
 
 .singleQuestion>p:not(:first-child) {
-    color: #0c5f96
+    color: #ff0000
 }
 
 .titleReport>h4 {
@@ -357,7 +357,7 @@ ul.symtomsListBox>li>button {
 }
 
 .titleReport>a {
-    background-color: #0c5f96;
+    background-color: #ff0000;
     color: #fff;
     line-height: 1.5rem;
     padding: 0 .6rem;
@@ -371,7 +371,7 @@ ul.symtomsListBox>li>button {
 }
 
 div.Possibility span {
-    color: #0c5f96;
+    color: #ff0000;
     font-weight: 600
 }
 
@@ -385,7 +385,7 @@ div.Possibility span {
 
 .possibilityProgressBar>div {
     height: 100%;
-    background-color: #0c5f96
+    background-color: #ff0000
 }
 
 .diseaseSymptoms {
@@ -404,7 +404,7 @@ div.Possibility span {
 }
 
 .diseaseSymptoms>ul>li.active {
-    border: 1px solid #0c5f96;
-    color: #0c5f96
+    border: 1px solid #ff0000;
+    color: #ff0000
 }
 
