@@ -96,7 +96,7 @@
                 "aria-label": "Home"
             }, s.a.createElement(m, null)), s.a.createElement("h3", {
                 className: "display-inline-block padding-left-1"
-            }, "Symptom Checker"))))))))
+            }, "H͟e͟a͟l͟t͟h͟ A͟n͟a͟l͟y͟z͟e͟r͟🧬"))))))))
         }
           , d = (t(19),
         t(20),
@@ -1311,5 +1311,4 @@
         ))
     }
     ], [[10, 1, 2]]]);
-    //# sourceMappingURL=main.31ba06f0.chunk.js.map
     
