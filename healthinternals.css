@@ -125,8 +125,8 @@ main {
     font-size: 1rem;
     text-align: center;
   }
+
   
-  /* Mobile responsiveness */
   @media (max-width: 600px) {
     .buttons-section {
       flex-direction: column;
@@ -139,4 +139,5 @@ main {
       height: 150px;
     }
   }
-  
+  body {background-color: rgba(128, 113, 113, 0.351);}
+
